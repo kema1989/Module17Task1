@@ -9,6 +9,10 @@ namespace Module17Task1
     class NormalAccountCalculator : IAccountCalculator
     {
         public Account account;
+        public NormalAccountCalculator(Account account)
+        {
+            this.account = account;
+        }
         public void Calculate()
         {
             account.Interest = account.Balance * 0.4;
